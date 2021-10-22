@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="UTF-8">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="styleSheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="chef.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <header id="header">
+            <div class="bar"><i class="fas fa-bars bars"></i></div>
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>c</span>
+                <span>h</span>
+                <span>e</span>
+                <span>f</span>
+            </div>
+            <nav class="menu">
+                <!-- <a href="#home">home</a>
+                <a href="#dishes">dishes</a>
+                <a href="#about">about</a>
+                <a href="#menu">menu</a>
+                <a href="#review">review</a>
+                <a href="#oder">oder</a> -->
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#dishes">dishes</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#review">review</a></li>
+                    <li><a href="#order">order</a></li>
+                </ul>
+            </nav>
+            <div class="icon">
+                <i class="fas fa-search icon_search"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-shopping-cart icon_cart" id="icon_cart"></i><span class="numberCartttt">0</span>
+        </header>
+        <section class="menu2">
+            <a href="#home">home</a>
+            <a href="#dishes">dishes</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#order">order</a>
+        </section>
+        <section class="form_search">
+            <input type="search" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </section>
+        <section class="form_cart" >
+            <div class="cart_content">
+                <ul id="form_cart">
+                    <li>Sản phẩm</li>
+                    <li>Số lượng</li>
+                    <li>Giá tiền</li>
+                    <li>Xóa</li>
+                </ul>
+                <div class="cartRow" id="cart">
+                    
+                </div>
+            </div>
+            <div class="sum">
+                <p>Thành tiền:</p>
+                <div class="prices">$0</div>
+                <a href="#" class="sums">Mua</a>
+            </div>
+        </section>
+        <div class="home" id="home">
+            <div>
+                <div class="slide">
+                    <img src="shape/n1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="shape/n2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="shape/n3.jpg">
+                </div>
+                <div class="slide">
+                    <img src="shape/n4.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="dishes" id="dishes">
+            <div>
+                <p class="title1">about us</p>
+                <p class="title2">why chose us?</p>
+                <div class="albums" id="add">
+                    <div class="album box" id="add1">
+                        
+                        <img src="shape/product1.jpg" class="imges">
+                        <p class="dishes_name name" id="title">Mỳ Ý</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="buys">
+                            <p id="buy" class="buy">$20.99</p>
+                            <a href="javascript:;" class="addTocart" rel="1">Add To cart</a>
+                        </div>
+                    </div>
+                    <div class="album box" id="add2">
+                        
+                        <img src="shape/product2.jpg" class="imges">
+                        <p class="dishes_name name" id="title">Bò Bít Tét</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="buys">
+                            <p id="buy" class="buy">$21.99</p> 
+                            <a href="javascript:;" class="addTocart" rel="2">Add To cart</a>
+                        </div>
+                    </div>
+                    
+                    <div class="album box">
+                        
+                        <img src="shape/product3.jpg" class="imges">
+                        <p class="dishes_name name">pizza</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="buys">
+                            <p id="buy" class="buy">$22.99</p>
+                            <a href="javascript:;" class="addTocart"rel="3">Add To cart</a>
+                        </div>
+                    </div>
+                    <div class="album box">
+                        
+                        <img src="shape/product4.jpg" class="imges">
+                        <p class="dishes_name name">gan ngỗng</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="buys">
+                            <p id="buy" class="buy">$23.99</p>
+                            <a href="javascript:;" class="addTocart" rel="4">Add To cart</a>
+                        </div>
+                    </div>
+                    <div class="album box">
+                       
+                        <img src="shape/product5.jpg" class="imges">
+                        <p class="dishes_name name">bánh kẹp</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="buys">
+                            <p id="buy" class="buy">$24.99</p>
+                            <a href="javascript:;" class="addTocart" rel="5">Add To cart</a>
+                        </div>
+                    </div>
+                    
+                    <div class="album box">
+                        
+                        <img src="shape/product6.jpg" class="imges">
+                        <p class="dishes_name name">gà nướng</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="buys">
+                            <p id="buy" class="buy">$25.99</p>
+                            <a href="javascript:;" class="addTocart" rel="6">Add To cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div>
+                <p class="title1">our dishes</p>
+                <p class="title2">popular dishes</p>
+                <div class="shape_content">
+                    <div class="shape">
+                        <img src="shape/about.png">
+                    </div>
+                    <div class="content">
+                        <h2>Best Food In The Country</h2>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing 
+                        Elit. Dolore, Sequi Corrupti Corporis Quaerat Voluptatem 
+                        Ipsam Neque Labore Modi Autem, Saepe Numquam Quod 
+                        Reprehenderit Rem? Tempora Aut Soluta Odio Corporis Nihil!</p>
+                        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. 
+                        Aperiam, Nemo. Sit Porro Illo Eos Cumque Deleniti Iste Alias, 
+                        Eum Natus.</p>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-shipping-fast"></i> Free Delivery</a></li>
+                            <li><a href="#"><i class="fas fa-dollar-sign"></i> Easy Payments</a></li>
+                            <li><a href="#"><i class="fas fa-headset"></i> 24/7 Service</a></li>
+                        </ul>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+            <div>
+                <p class="title1">about menu</p>
+                <p class="title2">today's speciality?</p>
+                <div class="menu_shape" id="menu_shape">
+                    <div class="slide box">
+                        <img src="shape/menu-1.jpg" class="imges">
+                        <p class="menu_name name">Pizza</p>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        
+                        <p class="content">Lorem Ipsum Dolor Sit, Amet</p>
+                        <p class="content">Consectetur Adipisicing Elit.</p>
+                        <p class="content">Excepturi, Accusantium.</p>
+                        <div class="buys">
+                            <p id="buy" class="buy">$20.99</p>
+                            <a href="javascript:;" class="addTocart">Add To cart</a>
+                        </div>
+                        <i class="fas fa-heart heart1_1 heart"></i>
+                    </div>
+                    <div class="slide box">
+                        <img src="shape/menu-2.jpg" class="imges">
+                        <p class="menu_name name">Humburger</p>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        
+                        <p class="content">Lorem Ipsum Dolor Sit, Amet</p>
+                        <p class="content">Consectetur Adipisicing Elit.</p>
+                        <p class="content">Excepturi, Accusantium.</p>
+                        <div class="buys">
+                            <p id="buy" class="buy">$20.99</p>
+                            <a href="javascript:;" class="addTocart">Add To cart</a>
+                        </div>
+                        <i class="fas fa-heart heart1_2 heart"></i>
+                    </div>
+                    <div class="slide box">
+                        <img src="shape/menu-3.jpg" class="imges">
+                        <p class="menu_name name">Bánh Chuối</p>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        
+                        <p class="content">Lorem Ipsum Dolor Sit, Amet</p>
+                        <p class="content">Consectetur Adipisicing Elit.</p>
+                        <p class="content">Excepturi, Accusantium.</p>
+                        <div class="buys">
+                            <p id="buy" class="buy">$20.99</p>
+                            <a href="javascript:;" class="addTocart">Add To cart</a>
+                        </div>
+                        <i class="fas fa-heart heart1_3 heart"></i>
+                    </div>
+                    <div class="slide box">
+                        <img src="shape/menu-4.jpg" class="imges">
+                        <p class="menu_name name">Kem</p>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        
+                        <p class="content">Lorem Ipsum Dolor Sit, Amet</p>
+                        <p class="content">Consectetur Adipisicing Elit.</p>
+                        <p class="content">Excepturi, Accusantium.</p>
+                        <div class="buys">
+                            <p id="buy" class="buy">$20.99</p>
+                            <a href="javascript:;" class="addTocart">Add To cart</a>
+                        </div>
+                        <i class="fas fa-heart heart1_4 heart"></i>
+                    </div>
+                    <div class="slide box">
+                        <img src="shape/menu-5.jpg" class="imges">
+                        <p class="menu_name name">Bánh Trái Cây</p>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        
+                        <p class="content">Lorem Ipsum Dolor Sit, Amet</p>
+                        <p class="content">Consectetur Adipisicing Elit.</p>
+                        <p class="content">Excepturi, Accusantium.</p>
+                        <div class="buys">
+                            <p id="buy" class="buy">$20.99</p>
+                            <a href="javascript:;" class="addTocart">Add To cart</a>
+                        </div>
+                        <i class="fas fa-heart heart1_5 heart"></i>
+                    </div>
+                    <div class="slide box">
+                        <img src="shape/menu-6.jpg" class="imges">
+                        <p class="menu_name name">Kem Than Tre</p>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        
+                        <p class="content">Lorem Ipsum Dolor Sit, Amet</p>
+                        <p class="content">Consectetur Adipisicing Elit.</p>
+                        <p class="content">Excepturi, Accusantium.</p>
+                        <div class="buys">
+                            <p id="buy" class="buy">$20.99</p>
+                            <a href="javascript:;" class="addTocart">Add To cart</a>
+                        </div>
+                        <i class="fas fa-heart heart1_6 heart"></i>
+                    </div>
+                    <div class="slide box">
+                        <img src="shape/menu-7.jpg" class="imges">
+                        <p class="menu_name name">Nước Trái Cây</p>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        
+                        <p class="content">Lorem Ipsum Dolor Sit, Amet</p>
+                        <p class="content">Consectetur Adipisicing Elit.</p>
+                        <p class="content">Excepturi, Accusantium.</p>
+                        <div class="buys">
+                            <p id="buy" class="buy">$20.99</p>
+                            <a href="javascript:;" class="addTocart">Add To cart</a>
+                        </div>
+                        <i class="fas fa-heart heart1_7 heart"></i>
+                    </div>
+                    <div class="slide box">
+                        <img src="shape/menu-8.jpg" class="imges">
+                        <p class="menu_name name">Cacao Dầm</p>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        
+                        <p class="content">Lorem Ipsum Dolor Sit, Amet</p>
+                        <p class="content">Consectetur Adipisicing Elit.</p>
+                        <p class="content">Excepturi, Accusantium.</p>
+                        <div class="buys">
+                            <p id="buy" class="buy">$20.99</p>
+                            <a href="javascript:;" class="addTocart">Add To cart</a>
+                        </div>
+                        <i class="fas fa-heart heart1_8 heart"></i>
+                    </div>
+                    <div class="slide box">
+                        <img src="shape/menu-9.jpg" class="imges">
+                        <p class="menu_name name">Nước cam</p>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        
+                        <p class="content">Lorem Ipsum Dolor Sit, Amet</p>
+                        <p class="content">Consectetur Adipisicing Elit.</p>
+                        <p class="content">Excepturi, Accusantium.</p>
+                        <div class="buys">
+                            <p id="buy" class="buy">$20.99</p>
+                            <a href="javascript:;" class="addTocart">Add To cart</a>
+                        </div>
+                        <i class="fas fa-heart heart1_9 heart"></i>
+                    </div>
+                </div>
+                <p class="shapePlus" onclick="shapePlus('menu_shape')">Xem thêm</p>
+                <p class="shapeReduce" onclick="shapeReduce('menu_shape')">Kết thúc</p>
+            </div>
+        </div>
+        <div class="review" id="review">
+            <div>
+                <p class="title1">about review</p>
+                <p class="title2">WHAT THEY SAY</p>
+                <div class="content">
+                    <div class="review_content">
+                        <div class="shapes">
+                            <div class="shape">
+                                <img src="shape/r1.png">
+                            </div>
+                            <div class="name">
+                                <h3>Jen <i class="fas fa-quote-right"></i></h3>
+                                <p class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <p>vào bàn em được phát cho tờ giấy để tích đồ ăn, xong ngồi đợi tầm 20' món ăn mới được mang lên. lần đầu mang lên thấy ấn tượng, trình bày đẹp mắt, view nhìn ra Thái hà nên rất thích hợp cho việc sống ảo :'), nhưng đến khi nướng lên thì thấy thịt đông lạnh lên khi nướng lên nó chảy nước rất nhiều và không tẩm ướp gì nên nhạt nhẽo,lại bở nữa. nhưng vẫn thuộc diện tạm chấp nhận được</p>
+                    </div>
+                    <div class="review_content swiper-slide">
+                        <div class="shapes">
+                            <div class="shape">
+                                <img src="shape/r1.png">
+                            </div>
+                            <div class="name">
+                                <h3>John <i class="fas fa-quote-right"></i></h3>
+                                <p class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <p>vào bàn em được phát cho tờ giấy để tích đồ ăn, xong ngồi đợi tầm 20' món ăn mới được mang lên. lần đầu mang lên thấy ấn tượng, trình bày đẹp mắt, view nhìn ra Thái hà nên rất thích hợp cho việc sống ảo :'), nhưng đến khi nướng lên thì thấy thịt đông lạnh lên khi nướng lên nó chảy nước rất nhiều và không tẩm ướp gì nên nhạt nhẽo,lại bở nữa. nhưng vẫn thuộc diện tạm chấp nhận được</p>
+                    </div>
+                    <div class="review_content swiper-slide">
+                        <div class="shapes">
+                            <div class="shape">
+                                <img src="shape/r1.png">
+                            </div>
+                            <div class="name">
+                                <h3>Tom <i class="fas fa-quote-right"></i></h3>
+                                <p class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <p>vào bàn em được phát cho tờ giấy để tích đồ ăn, xong ngồi đợi tầm 20' món ăn mới được mang lên. lần đầu mang lên thấy ấn tượng, trình bày đẹp mắt, view nhìn ra Thái hà nên rất thích hợp cho việc sống ảo :'), nhưng đến khi nướng lên thì thấy thịt đông lạnh lên khi nướng lên nó chảy nước rất nhiều và không tẩm ướp gì nên nhạt nhẽo,lại bở nữa. nhưng vẫn thuộc diện tạm chấp nhận được</p>
+                    </div>
+                    <div class="review_content swiper-slide">
+                        <div class="shapes">
+                            <div class="shape">
+                                <img src="shape/r1.png">
+                            </div>
+                            <div class="name">
+                                <h3>Heli <i class="fas fa-quote-right"></i></h3>
+                                <p class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <p>vào bàn em được phát cho tờ giấy để tích đồ ăn, xong ngồi đợi tầm 20' món ăn mới được mang lên. lần đầu mang lên thấy ấn tượng, trình bày đẹp mắt, view nhìn ra Thái hà nên rất thích hợp cho việc sống ảo :'), nhưng đến khi nướng lên thì thấy thịt đông lạnh lên khi nướng lên nó chảy nước rất nhiều và không tẩm ướp gì nên nhạt nhẽo,lại bở nữa. nhưng vẫn thuộc diện tạm chấp nhận được</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        <div class="order" id="order">
+            <div>
+                <p class="title1">Order Now</p>
+                <p class="title2">FREE AND FAST</p>
+                <form>
+                    <div class="input">
+                        <div>
+                            <label>Your Name</label>
+                            <input type="text" placeholder="enter your name">
+                        </div>
+                        <div>
+                            <label>Your Number</label>
+                            <input type="number" min="0" max="50" placeholder="enter your number">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div>
+                            <label>Your Order</label>
+                            <input type="text" placeholder="enter your order">
+                        </div>
+                        <div>
+                            <label>Additional Food</label>
+                            <input type="text" placeholder="extra with food">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div>
+                            <label>How Much</label>
+                            <input type="text" placeholder="how many order">
+                        </div>
+                        <div>
+                            <label>Your Date</label>
+                            <input type="datetime-local" placeholder="enter your number">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div>
+                            <label>Your Address</label>
+                            <textarea placeholder="enter your address" rows="8" cols="30"></textarea>
+                        </div>
+                        <div>
+                            <label>Your Message</label>
+                            <textarea placeholder="enter your message" rows="8" cols="30"></textarea>
+                        </div>
+                    </div>
+                    <a href="#">Order Now</a>
+                </form>
+            </div>
+        </div>
+
+
+
+        
+
+
+
+        <script src="cart.js"></script>
+
+        
+
+        <!-- <div class="load">
+            <img src="shape/load2.gif">
+        </div> -->
+
+        
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+        <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+        <!-- <script src="review.js"></script> -->
+        <script src="chef.js"></script>
+    </body>
+</html>
